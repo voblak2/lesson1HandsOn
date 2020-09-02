@@ -6,7 +6,7 @@ namespace lesson1HandsOn
     {
         static void Main(string[] args)
         {
-            bool isSunny = true;
+            bool isSunny = false;
 
             var wear = "Wear sunglasses.";
             var dontWear = "You don't need to wear sunglasses.";
@@ -24,6 +24,8 @@ namespace lesson1HandsOn
             var sunblock = "Sunblock is a good idea.";
             var noSunblock = "Sunblock isn't needed.";
 
+            if (isSunny) 
+            {
                 if (atBeach)
                 {
                     Console.WriteLine(sunblock);
@@ -31,7 +33,19 @@ namespace lesson1HandsOn
                     {
                         Console.WriteLine(noSunblock);
                     }
-   
+            }
+            bool goAnyway = true;
+
+            var going = "Awesome! Glad you don't mind clouds!";
+            var nextTime = "No worries! Hopefully next time we will have some sun!";
+
+                if (goAnyway) 
+                {
+                    Console.WriteLine(going);
+                }   else 
+                    {
+                        Console.WriteLine(nextTime);
+                    }
         }
     }
 }
